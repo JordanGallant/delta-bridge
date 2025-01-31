@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { FC } from "react";
+import { FC, useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 
 export interface LogoProps {
@@ -12,7 +12,13 @@ export interface LogoProps {
 
 export const Logo: FC<LogoProps> = ({ className, width = 150, height = 50 }) => {
   const { theme, resolvedTheme } = useTheme();
-  const currentTheme = resolvedTheme || theme;
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  const currentTheme = mounted ? resolvedTheme || theme : "light"; // Default to light mode before hydration
 
   return (
     <Image
