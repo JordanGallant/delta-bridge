@@ -16,10 +16,10 @@ const ImageComponent: React.FC = () => {
           <span className={title({ color: "blue" })}>Connecting&nbsp;</span>
 
           <br />
-          <span className={title()}>
+          <span className={`${title()} text-black`}>
             Businesses with Trusted Intelligence Experts.
           </span>
-          <p>
+          <p className="mt-8 text-black">
             Access high-quality intelligence on demand through
             <br />
             a secure platform designed for seamless
