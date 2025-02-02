@@ -40,6 +40,26 @@ export const title = tv({
   ],
 });
 
+export const midText = tv({
+  base: "text-lg lg:text-xl font-bold my-1 block bg-clip-text text-transparent bg-gradient-to-b",
+  variants: {
+    color: {
+      blueReversed: "from-[#0072F5] to-[#5EA2EF]",
+    },
+    fullWidth: {
+      true: "!w-full",
+    },
+    emphasis: {
+      italic: "italic",
+      underline: "underline",
+    },
+  },
+  defaultVariants: {
+    color: "blueReversed",
+    fullWidth: true,
+  },
+});
+
 export const subtitle = tv({
   base: "w-full md:w-1/2 my-2 text-lg lg:text-xl text-default-600 block max-w-full",
   variants: {

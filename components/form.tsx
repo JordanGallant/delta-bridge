@@ -32,7 +32,7 @@ const FormComponent: React.FC = () => {
             type="text"
           />
 
-<Input
+          <Input
             isRequired
             label="Last Name:"
             labelPlacement="outside"
@@ -52,13 +52,13 @@ const FormComponent: React.FC = () => {
           />
 
           <Textarea
-          isRequired
-          errorMessage="Please enter a message"
-          label="Message:"
-          labelPlacement="outside"
-          placeholder="Enter your message"
-          name="message"
-          type="text"
+            isRequired
+            errorMessage="Please enter a message"
+            label="Message:"
+            labelPlacement="outside"
+            name="message"
+            placeholder="Enter your message"
+            type="text"
           />
           <div className="flex gap-2">
             <Button color="primary" type="submit">
