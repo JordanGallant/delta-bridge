@@ -124,16 +124,12 @@ const getContentForPage = (page: string) => {
             Who are the analysts on DeltaBridge?
           </span>
           <p>
-            <ul>
-              DeltaBridge Expert Analysts are vetted intelligence professionals,
-              including:
-              <br />
-              <li>1. OSINT specialists.</li>
-              <li>2. Geopolitical risk analysts</li>
-              <li>3. Cyber security experts.</li>
-              <li>4. Competitive intelligence professionals.</li>
-              <li>5. Due diligence and financial intelligence consultants.</li>
-            </ul>
+            DeltaBridge Expert Analysts are vetted intelligence professionals,
+            including:
+            <br />
+            1. OSINT specialists. 2. Geopolitical risk analysts 3. Cyber
+            security experts. 4. Competitive intelligence professionals. 5. Due
+            diligence and financial intelligence consultants.
           </p>
           <br />
           <span className={`${midText()}`}>
