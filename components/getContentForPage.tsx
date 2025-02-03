@@ -394,7 +394,7 @@ const GetContentForPage = (page: string) => {
           )}
           <p className="border-b-2 border-blue-500 mt-9" />
           <br />
-          <span className={`${midText()}flex justify-between`} {...toggleProps("question2")}>
+          <span className={`${midText()} flex justify-between`} {...toggleProps("question2")}>
             How do analysts get paid?
             {visibleState["question2"] ? (
               <HiOutlineMinus className="w-8 h-8 text-blue-500" />

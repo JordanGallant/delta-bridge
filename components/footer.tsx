@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-4xl mx-auto px-4 sm:px-8">
         <span className={`${subtitle()} sm:text-left text-center mt-8`}>
           info@deltabridge.io
-          <div className="flex mt-5 ml-1">
+          <div className="flex mt-5 justify-center space-x-6 md:space-x-1 md:justify-start">
             <Link href="https://www.linkedin.com/company/deltabridge-io">
               <FaLinkedin className="mr-8 w-6 h-6" />
             </Link>
